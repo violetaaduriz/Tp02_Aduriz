@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebede6;
+    color: #0b0bce;
+    margin: 20px;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.btn-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #0b0bce;
+    border: 2px solid #0b0bce;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;  
+}
+
+.btn-info:hover {
+    background-color: #0b0bce;
+    color: #ebede6;
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;  
+}
+
+.image-gallery img {
+    width: 30%;
+    border: 1px solid #000;
+    transition: filter 0.3s ease;
+}
+
+.image-gallery img:hover {
+    filter: grayscale(100%);
+}
+
+
+.imagen-principal {
+    display: block;
+    margin: 20px auto;  
+    width: 80%;
+    border: 1px solid #000;
+}
+
+
+.titulo-izquierda {
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-gallery img {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #000;
+    height: 100px; 
+    margin-top: 40px; 
+    width: 100%;
+}
